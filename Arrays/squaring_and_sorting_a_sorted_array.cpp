@@ -21,7 +21,7 @@ void sortedSquaredArray(vector <int> &vec){
 
         // abs is a function that gives the absolute value of the passed value
 
-        if(abs(vec[pointerOne]) > abs(vec[pointerTwo])){
+        if(abs(vec[pointerOne]) >= abs(vec[pointerTwo])){
             sortedVec.push_back(vec[pointerOne]*vec[pointerOne]);
             pointerOne++;
         } else {
@@ -45,4 +45,7 @@ int main(){
 
     return 0;
 }
+
+//Input {-12, -9, -4, 0, 2, 5, 7, 8, 10, 11, 25}
+//Output {625 144 121 100 81 64 49 25 16 4 0 }
 
